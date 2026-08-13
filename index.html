@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derien - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <canvas id="stars-canvas"></canvas>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-logo">
+            <div class="nav-logo-icon">DR</div>
+            <span class="nav-logo-name">Derien</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#">Source Code</a></li>
+        </ul>
+
+        <div class="nav-social">
+            <a href="#" title="Instagram">Instagram</a>
+            <a href="#" title="Facebook">Facebook</a>
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero" id="about">
+
+        <div class="hero-left">
+
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Back End Developer Portfolio
+            </div>
+
+            <h1 class="hero-title">
+                Derien <span class="accent">Adelio</span><br>
+                Rhaivan
+            </h1>
+
+            <p class="hero-desc">
+                Saya adalah siswa SMK jurusan Rekayasa Perangkat Lunak (RPL) yang memiliki kemampuan di bidang web development dan pemrograman. Saya terbiasa mengembangkan berbagai proyek dengan pendekatan yang praktis, cepat, dan terstruktur. Saya adalah pribadi yang percaya diri, bertanggung jawab, mudah beradaptasi, dan to the point dalam menyelesaikan suatu pekerjaan.
+            </p>
+
+            <a href="#projects" class="hero-btn">
+                Lihat Project Saya
+            </a>
+
+        </div>
+
+
+        <!-- ICON ORBIT -->
+        <div class="hero-right">
+
+            <!-- FOTO PROFIL -->
+            <div class="profile-photo">
+                <img src="foto.jpeg" alt="Foto Saya">
+            </div>
+
+            <div class="orbit-line orbit-45"></div>
+            <div class="orbit-line orbit-135"></div>
+            <div class="orbit-line orbit-225"></div>
+            <div class="orbit-line orbit-315"></div>
+
+            <div class="orbit-ring-anim or1"></div>
+            <div class="orbit-ring-anim or2"></div>
+            <div class="orbit-ring-anim or3"></div>
+
+            <div class="ti ti-p1">
+                <img src="https://cdn.simpleicons.org/javascript" alt="JavaScript">
+            </div>
+
+            <div class="ti ti-p2">
+                <img src="https://cdn.simpleicons.org/express/white" alt="Express.js">
+            </div>
+
+            <div class="ti ti-p3">
+                <img src="https://cdn.simpleicons.org/nodedotjs/white" alt="Node.js">
+            </div>
+
+            <div class="ti ti-p4">
+                <img src="https://cdn.simpleicons.org/mysql/white" alt="MySQL">
+            </div>
+
+            <div class="ti ti-p5">
+                <img src="https://cdn.simpleicons.org/mongodb/white" alt="MongoDB">
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+
+        <div class="skills-header reveal">
+
+            <div class="section-badge">
+                <span class="badge-dot"></span>
+                Backend Stack
+            </div>
+
+            <h2 class="section-title">
+                Keahlian Saya
+            </h2>
+
+            <p class="section-sub">
+                Teknologi yang saya gunakan dalam pengembangan aplikasi.
+            </p>
+
+        </div>
+
+
+        <div class="skills-grid reveal">
+
+            <!-- JAVASCRIPT -->
+            <div class="skill-card">
+
+                <div class="skill-icon-box javascript">
+                    <img
+                        src="https://cdn.simpleicons.org/javascript/000000"
+                        alt="JavaScript"
+                    >
+                </div>
+
+                <span class="skill-badge frontend">
+                    Frontend
+                </span>
+
+                <h3>JavaScript</h3>
+
+                <p>
+                    Mampu mengimplementasikan logika interaktif,
+                    manipulasi DOM, AJAX Fetch, modularitas,
+                    dan penanganan event di sisi client.
+                </p>
+
+            </div>
+
+
+            <!-- EXPRESS -->
+            <div class="skill-card">
+
+                <div class="skill-icon-box express">
+                    <img
+                        src="https://cdn.simpleicons.org/express/ffffff"
+                        alt="Express.js"
+                    >
+                </div>
+
+                <span class="skill-badge backend">
+                    Backend
+                </span>
+
+                <h3>Express.js</h3>
+
+                <p>
+                    Membangun REST API menggunakan routing,
+                    middleware, autentikasi, serta integrasi
+                    database untuk aplikasi backend.
+                </p>
+
+            </div>
+
+
+            <!-- NODE JS -->
+            <div class="skill-card">
+
+                <div class="skill-icon-box node">
+                    <img
+                        src="https://cdn.simpleicons.org/nodedotjs/ffffff"
+                        alt="Node.js"
+                    >
+                </div>
+
+                <span class="skill-badge runtime">
+                    Runtime
+                </span>
+
+                <h3>Node.js</h3>
+
+                <p>
+                    Mengembangkan aplikasi backend menggunakan
+                    JavaScript dengan event-driven architecture
+                    dan package management melalui NPM.
+                </p>
+
+            </div>
+
+
+            <!-- MYSQL -->
+            <div class="skill-card">
+
+                <div class="skill-icon-box mysql">
+                    <img
+                        src="https://cdn.simpleicons.org/mysql/ffffff"
+                        alt="MySQL"
+                    >
+                </div>
+
+                <span class="skill-badge database">
+                    Database
+                </span>
+
+                <h3>MySQL</h3>
+
+                <p>
+                    Perancangan database relasional,
+                    pengelolaan tabel, query SQL,
+                    serta manipulasi data menggunakan CRUD.
+                </p>
+
+            </div>
+
+
+            <!-- MONGODB -->
+            <div class="skill-card">
+
+                <div class="skill-icon-box mongodb">
+                    <img
+                        src="https://cdn.simpleicons.org/mongodb/ffffff"
+                        alt="MongoDB"
+                    >
+                </div>
+
+                <span class="skill-badge database-alt">
+                    Database
+                </span>
+
+                <h3>MongoDB</h3>
+
+                <p>
+                    Mengelola database NoSQL berbasis dokumen
+                    dengan struktur fleksibel serta operasi
+                    CRUD untuk aplikasi modern.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+
+        <h2 class="projects-title">
+            <span>My Projects</span>
+        </h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card reveal">
+                <div class="project-preview">
+                    Project 1
+                </div>
+
+                <div class="project-body">
+                    <h3>Project Website</h3>
+
+                    <p>
+                        Project website yang saya buat
+                        menggunakan teknologi web.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-card reveal">
+                <div class="project-preview">
+                    Project 2
+                </div>
+
+                <div class="project-body">
+                    <h3>Backend API</h3>
+
+                    <p>
+                        REST API untuk mengelola data
+                        menggunakan Node.js dan Express.js.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-card reveal">
+                <div class="project-preview">
+                    Project 3
+                </div>
+
+                <div class="project-body">
+                    <h3>Database Project</h3>
+
+                    <p>
+                        Project pengelolaan database
+                        menggunakan MySQL dan MongoDB.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p class="footer-name">
+            Derien Adelio Rhaivan
+        </p>
+
+        <p>
+            © 2026 — Back-End Developer Portfolio.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        // STAR BACKGROUND
+        const canvas = document.getElementById("stars-canvas");
+        const ctx = canvas.getContext("2d");
+
+        let W;
+        let H;
+        let stars = [];
+
+        function resizeCanvas() {
+
+            W = canvas.width = window.innerWidth;
+            H = canvas.height = document.body.scrollHeight;
+
+        }
+
+        function createStars() {
+
+            stars = [];
+
+            for (let i = 0; i < 250; i++) {
+
+                stars.push({
+
+                    x: Math.random() * W,
+                    y: Math.random() * H,
+                    r: Math.random() * 1.6 + 0.2,
+                    phase: Math.random() * Math.PI * 2,
+                    speed: Math.random() * 0.01 + 0.005
+
+                });
+
+            }
+
+        }
+
+        function drawStars() {
+
+            ctx.clearRect(0, 0, W, H);
+
+            stars.forEach(star => {
+
+                star.phase += star.speed;
+
+                const opacity =
+                    0.3 + Math.sin(star.phase) * 0.45;
+
+                ctx.beginPath();
+
+                ctx.arc(
+                    star.x,
+                    star.y,
+                    star.r,
+                    0,
+                    Math.PI * 2
+                );
+
+                ctx.fillStyle =
+                    `rgba(255,255,255,${opacity})`;
+
+                ctx.fill();
+
+            });
+
+            requestAnimationFrame(drawStars);
+
+        }
+
+        resizeCanvas();
+        createStars();
+        drawStars();
+
+        window.addEventListener("resize", () => {
+
+            resizeCanvas();
+            createStars();
+
+        });
+
+
+        // SCROLL REVEAL
+        const reveals =
+            document.querySelectorAll(".reveal");
+
+        const observer =
+            new IntersectionObserver(
+                entries => {
+
+                    entries.forEach(entry => {
+
+                        if (entry.isIntersecting) {
+
+                            entry.target.classList.add("visible");
+
+                        }
+
+                    });
+
+                },
+                {
+                    threshold: 0.1
+                }
+            );
+
+        reveals.forEach(element => {
+            observer.observe(element);
+        });
+
+
+        // PARALLAX GLOW
+        document.addEventListener("mousemove", event => {
+
+            const glow =
+                document.querySelector(".hero-glow");
+
+            if (!glow) return;
+
+            const x =
+                (event.clientX / window.innerWidth - 0.5) * 30;
+
+            const y =
+                (event.clientY / window.innerHeight - 0.5) * 20;
+
+            glow.style.transform =
+                `translateX(calc(-50% + ${x}px)) translateY(${y}px)`;
+
+        });
+
+    </script>
+
+</body>
+</html>
