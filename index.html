@@ -22,16 +22,8 @@
     <title>Derien - Portfolio</title>
 
     <!-- Google Fonts -->
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap"
@@ -39,28 +31,26 @@
     >
 
     <!-- CSS -->
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+    <link rel="stylesheet" href="style.css">
 </head>
+
 
 <body>
 
-    <!-- =====================================================
+    <!-- =========================
          BACKGROUND
-    ====================================================== -->
+    ========================== -->
 
     <canvas id="stars-canvas"></canvas>
 
 
-    <!-- =====================================================
+    <!-- =========================
          NAVBAR
-    ====================================================== -->
+    ========================== -->
 
     <nav>
-        <div class="nav-logo">
 
+        <div class="nav-logo">
             <div class="nav-logo-icon">
                 DR
             </div>
@@ -68,7 +58,6 @@
             <span class="nav-logo-name">
                 Derien
             </span>
-
         </div>
 
 
@@ -93,8 +82,14 @@
             </li>
 
             <li>
-                <a href="#">
-                    Source Code
+                <a href="#certificates">
+                    Certificates
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact">
+                    Contact
                 </a>
             </li>
 
@@ -102,60 +97,52 @@
 
 
         <div class="nav-social">
-
-            <a
-                href="#"
-                title="Instagram"
-            >
+            <a href="#" title="Instagram">
                 Instagram
             </a>
-
-            <a
-                href="#"
-                title="Facebook"
-            >
-                Facebook
-            </a>
-
         </div>
+
     </nav>
 
 
-
-    <!-- =====================================================
-         MAIN CONTENT
-    ====================================================== -->
+    <!-- =========================
+         MAIN
+    ========================== -->
 
     <main>
 
 
-        <!-- =================================================
+        <!-- =========================
              HERO
-        ================================================== -->
+        ========================== -->
 
         <section
             class="hero"
             id="about"
         >
 
+            <div class="hero-glow"></div>
+
+
             <div class="hero-left">
 
                 <div class="hero-badge">
-
                     <span class="badge-dot"></span>
-
                     Back End Developer Portfolio
-
                 </div>
 
 
                 <h1 class="hero-title">
+
                     Derien
                     <span class="accent">
                         Adelio
                     </span>
+
                     <br>
+
                     Rhaivan
+
                 </h1>
 
 
@@ -183,37 +170,29 @@
             </div>
 
 
-
-            <!-- =============================================
+            <!-- =========================
                  FOTO + ORBIT
-            ============================================== -->
+            ========================== -->
 
             <div class="hero-right">
 
-                <!-- Foto Profil -->
-
                 <div class="profile-photo">
-
                     <img
                         src="foto.jpeg"
                         alt="Foto profil Derien"
                     >
-
                 </div>
 
 
-                <!-- Garis Orbit -->
+                <!-- Orbit Lines -->
 
                 <div class="orbit-line orbit-45"></div>
-
                 <div class="orbit-line orbit-135"></div>
-
                 <div class="orbit-line orbit-225"></div>
-
                 <div class="orbit-line orbit-315"></div>
 
 
-                <!-- Ring Orbit -->
+                <!-- Orbit Rings -->
 
                 <div
                     class="orbit-ring-anim or1"
@@ -234,60 +213,50 @@
                 <!-- JavaScript -->
 
                 <div class="ti ti-p1">
-
                     <img
                         src="https://cdn.simpleicons.org/javascript"
                         alt="JavaScript"
                     >
-
                 </div>
 
 
-                <!-- Express.js -->
+                <!-- Express -->
 
                 <div class="ti ti-p2">
-
                     <img
                         src="https://cdn.simpleicons.org/express/white"
                         alt="Express.js"
                     >
-
                 </div>
 
 
-                <!-- Node.js -->
+                <!-- Node -->
 
                 <div class="ti ti-p3">
-
                     <img
                         src="https://cdn.simpleicons.org/nodedotjs/white"
                         alt="Node.js"
                     >
-
                 </div>
 
 
                 <!-- MySQL -->
 
                 <div class="ti ti-p4">
-
                     <img
                         src="https://cdn.simpleicons.org/mysql/white"
                         alt="MySQL"
                     >
-
                 </div>
 
 
                 <!-- MongoDB -->
 
                 <div class="ti ti-p5">
-
                     <img
                         src="https://cdn.simpleicons.org/mongodb/white"
                         alt="MongoDB"
                     >
-
                 </div>
 
             </div>
@@ -296,9 +265,9 @@
 
 
 
-        <!-- =================================================
+        <!-- =========================
              SKILLS
-        ================================================== -->
+        ========================== -->
 
         <section
             class="skills"
@@ -308,18 +277,13 @@
             <div class="skills-header reveal">
 
                 <div class="section-badge">
-
                     <span class="badge-dot"></span>
-
                     Backend Stack
-
                 </div>
-
 
                 <h2 class="section-title">
                     Keahlian Saya
                 </h2>
-
 
                 <p class="section-sub">
                     Teknologi yang saya gunakan dalam
@@ -327,7 +291,6 @@
                 </p>
 
             </div>
-
 
 
             <div class="skills-grid reveal">
@@ -338,29 +301,24 @@
                 <article class="skill-card">
 
                     <div class="skill-icon-box javascript">
-
                         <img
                             src="https://cdn.simpleicons.org/javascript/000000"
                             alt="JavaScript"
                             loading="lazy"
                         >
-
                     </div>
-
 
                     <span class="skill-badge frontend">
                         Frontend
                     </span>
 
-
                     <h3>
                         JavaScript
                     </h3>
 
-
                     <p>
                         Mampu mengimplementasikan logika
-                        interaktif, manipulasi DOM, AJAX
+                        interaktif, manipulasi DOM, AJAX,
                         Fetch, modularitas, dan penanganan
                         event di sisi client.
                     </p>
@@ -368,31 +326,25 @@
                 </article>
 
 
-
-                <!-- Express.js -->
+                <!-- Express -->
 
                 <article class="skill-card">
 
                     <div class="skill-icon-box express">
-
                         <img
                             src="https://cdn.simpleicons.org/express/ffffff"
                             alt="Express.js"
                             loading="lazy"
                         >
-
                     </div>
-
 
                     <span class="skill-badge backend">
                         Backend
                     </span>
 
-
                     <h3>
                         Express.js
                     </h3>
-
 
                     <p>
                         Membangun REST API menggunakan
@@ -404,31 +356,25 @@
                 </article>
 
 
-
-                <!-- Node.js -->
+                <!-- Node -->
 
                 <article class="skill-card">
 
                     <div class="skill-icon-box node">
-
                         <img
                             src="https://cdn.simpleicons.org/nodedotjs/ffffff"
                             alt="Node.js"
                             loading="lazy"
                         >
-
                     </div>
-
 
                     <span class="skill-badge runtime">
                         Runtime
                     </span>
 
-
                     <h3>
                         Node.js
                     </h3>
-
 
                     <p>
                         Mengembangkan aplikasi backend
@@ -440,31 +386,25 @@
                 </article>
 
 
-
                 <!-- MySQL -->
 
                 <article class="skill-card">
 
                     <div class="skill-icon-box mysql">
-
                         <img
                             src="https://cdn.simpleicons.org/mysql/ffffff"
                             alt="MySQL"
                             loading="lazy"
                         >
-
                     </div>
-
 
                     <span class="skill-badge database">
                         Database
                     </span>
 
-
                     <h3>
                         MySQL
                     </h3>
-
 
                     <p>
                         Perancangan database relasional,
@@ -476,31 +416,25 @@
                 </article>
 
 
-
                 <!-- MongoDB -->
 
                 <article class="skill-card">
 
                     <div class="skill-icon-box mongodb">
-
                         <img
                             src="https://cdn.simpleicons.org/mongodb/ffffff"
                             alt="MongoDB"
                             loading="lazy"
                         >
-
                     </div>
-
 
                     <span class="skill-badge database-alt">
                         Database
                     </span>
 
-
                     <h3>
                         MongoDB
                     </h3>
-
 
                     <p>
                         Mengelola database NoSQL berbasis
@@ -517,9 +451,9 @@
 
 
 
-        <!-- =================================================
+        <!-- =========================
              PROJECTS
-        ================================================== -->
+        ========================== -->
 
         <section
             class="projects"
@@ -536,14 +470,11 @@
             <div class="projects-grid">
 
 
-                <!-- Project 1 -->
-
                 <article class="project-card reveal">
 
                     <div class="project-preview">
                         Project 1
                     </div>
-
 
                     <div class="project-body">
 
@@ -551,27 +482,15 @@
                             Project Website
                         </h3>
 
-
                         <p>
                             Project website yang saya buat
                             menggunakan teknologi web.
                         </p>
 
-
                         <div class="project-tags">
-
-                            <span>
-                                HTML
-                            </span>
-
-                            <span>
-                                CSS
-                            </span>
-
-                            <span>
-                                JavaScript
-                            </span>
-
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
                         </div>
 
                     </div>
@@ -579,8 +498,6 @@
                 </article>
 
 
-
-                <!-- Project 2 -->
 
                 <article class="project-card reveal">
 
@@ -588,13 +505,11 @@
                         Project 2
                     </div>
 
-
                     <div class="project-body">
 
                         <h3>
                             Backend API
                         </h3>
-
 
                         <p>
                             REST API untuk mengelola data
@@ -602,21 +517,10 @@
                             Express.js.
                         </p>
 
-
                         <div class="project-tags">
-
-                            <span>
-                                Node.js
-                            </span>
-
-                            <span>
-                                Express
-                            </span>
-
-                            <span>
-                                MySQL
-                            </span>
-
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MySQL</span>
                         </div>
 
                     </div>
@@ -625,14 +529,11 @@
 
 
 
-                <!-- Project 3 -->
-
                 <article class="project-card reveal">
 
                     <div class="project-preview">
                         Project 3
                     </div>
-
 
                     <div class="project-body">
 
@@ -640,23 +541,14 @@
                             Database Project
                         </h3>
 
-
                         <p>
                             Project pengelolaan database
                             menggunakan MySQL dan MongoDB.
                         </p>
 
-
                         <div class="project-tags">
-
-                            <span>
-                                MySQL
-                            </span>
-
-                            <span>
-                                MongoDB
-                            </span>
-
+                            <span>MySQL</span>
+                            <span>MongoDB</span>
                         </div>
 
                     </div>
@@ -669,9 +561,9 @@
 
 
 
-        <!-- =================================================
+        <!-- =========================
              CERTIFICATES
-        ================================================== -->
+        ========================== -->
 
         <section
             class="certificates"
@@ -681,18 +573,13 @@
             <div class="certificates-header reveal">
 
                 <div class="section-badge">
-
                     <span class="badge-dot"></span>
-
                     Certificates
-
                 </div>
-
 
                 <h2 class="section-title">
                     Sertifikat Saya
                 </h2>
-
 
                 <p class="section-sub">
                     Beberapa sertifikat yang telah saya
@@ -703,24 +590,18 @@
             </div>
 
 
-
             <div class="certificates-grid">
 
-
-                <!-- Sertifikat 1 -->
 
                 <article class="certificate-card reveal">
 
                     <div class="certificate-image">
-
                         <img
                             src="sertifikat1.jpg"
                             alt="Sertifikat 1"
                             loading="lazy"
                         >
-
                     </div>
-
 
                     <div class="certificate-content">
 
@@ -728,11 +609,9 @@
                             Nama Sertifikat
                         </h3>
 
-
                         <p class="certificate-issuer">
                             Nama Penerbit / Platform
                         </p>
-
 
                         <span class="certificate-year">
                             2026
@@ -744,20 +623,15 @@
 
 
 
-                <!-- Sertifikat 2 -->
-
                 <article class="certificate-card reveal">
 
                     <div class="certificate-image">
-
                         <img
                             src="sertifikat2.jpg"
                             alt="Sertifikat 2"
                             loading="lazy"
                         >
-
                     </div>
-
 
                     <div class="certificate-content">
 
@@ -765,11 +639,9 @@
                             Nama Sertifikat
                         </h3>
 
-
                         <p class="certificate-issuer">
                             Nama Penerbit / Platform
                         </p>
-
 
                         <span class="certificate-year">
                             2026
@@ -781,20 +653,15 @@
 
 
 
-                <!-- Sertifikat 3 -->
-
                 <article class="certificate-card reveal">
 
                     <div class="certificate-image">
-
                         <img
                             src="sertifikat3.jpg"
                             alt="Sertifikat 3"
                             loading="lazy"
                         >
-
                     </div>
-
 
                     <div class="certificate-content">
 
@@ -802,11 +669,9 @@
                             Nama Sertifikat
                         </h3>
 
-
                         <p class="certificate-issuer">
                             Nama Penerbit / Platform
                         </p>
-
 
                         <span class="certificate-year">
                             2026
@@ -820,13 +685,153 @@
 
         </section>
 
+
+
+        <!-- =========================
+             CONTACT
+             TANPA FORM KIRIM PESAN
+        ========================== -->
+
+        <section
+            class="contact"
+            id="contact"
+        >
+
+            <div class="contact-header reveal">
+
+                <div class="section-badge">
+                    <span class="badge-dot"></span>
+                    Contact
+                </div>
+
+                <h2 class="section-title">
+                    Hubungi Saya
+                </h2>
+
+                <p class="section-sub">
+                    Temukan saya melalui beberapa platform
+                    berikut.
+                </p>
+
+            </div>
+
+
+            <div class="contact-grid reveal">
+
+
+                <!-- Email -->
+
+                <a
+                    href="mailto:adelioderien@gmail.com"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon email-icon">
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.5l9 6 9-6V7H3zm18 10V9.9l-8.45 5.63a1 1 0 0 1-1.1 0L3 9.9V17h18z"/>
+                        </svg>
+                    </div>
+
+                    <div class="contact-content">
+
+                        <span class="contact-title">
+                            EMAIL
+                        </span>
+
+                        <span class="contact-value">
+                            adelioderien@gmail.com
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- GitHub -->
+
+                <a
+                    href="https://github.com/Rhaivan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon github-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.74.08-.74 1.2.09 1.84 1.23 1.84 1.23 1.07 1.83 2.8 1.3 3.49.99.11-.77.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6-.01c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.6-2.81 5.62-5.49 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5z"/>
+                        </svg>
+
+                    </div>
+
+                    <div class="contact-content">
+
+                        <span class="contact-title">
+                            GITHUB
+                        </span>
+
+                        <span class="contact-value">
+                            Derien Adelio Rhaivan
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+
+                <!-- LinkedIn -->
+
+                <a
+                    href="https://www.linkedin.com/in/derien-rhaivan-6514593b0?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-card"
+                >
+
+                    <div class="contact-icon linkedin-icon">
+
+                        <svg
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                        >
+                            <path d="M5.04 3.5A2.5 2.5 0 1 1 5 8.5a2.5 2.5 0 0 1 .04-5zM2.75 9.5h4.5V21h-4.5V9.5zM9.5 9.5h4.31v1.57h.06c.6-1.13 2.07-2.32 4.26-2.32 4.55 0 5.39 2.99 5.39 6.88V21h-4.5v-4.76c0-1.14-.02-2.61-1.59-2.61-1.59 0-1.83 1.24-1.83 2.53V21H9.5V9.5z"/>
+                        </svg>
+
+                    </div>
+
+                    <div class="contact-content">
+
+                        <span class="contact-title">
+                            LINKEDIN
+                        </span>
+
+                        <span class="contact-value">
+                            Derien Rhaivan
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
     </main>
 
 
 
-    <!-- =====================================================
+    <!-- =========================
          FOOTER
-    ====================================================== -->
+    ========================== -->
 
     <footer>
 
@@ -842,15 +847,15 @@
 
 
 
-    <!-- =====================================================
+    <!-- =========================
          JAVASCRIPT
-    ====================================================== -->
+    ========================== -->
 
     <script>
 
-        /* =================================================
+        /* =========================
            STAR BACKGROUND
-        ================================================== */
+        ========================== */
 
         const canvas =
             document.getElementById("stars-canvas");
@@ -972,9 +977,9 @@
 
 
 
-        /* =================================================
+        /* =========================
            SCROLL REVEAL
-        ================================================== */
+        ========================== */
 
         const revealElements =
             document.querySelectorAll(".reveal");
@@ -986,9 +991,7 @@
 
                     entries.forEach(entry => {
 
-                        if (
-                            entry.isIntersecting
-                        ) {
+                        if (entry.isIntersecting) {
 
                             entry.target.classList.add(
                                 "visible"
@@ -1005,19 +1008,17 @@
             );
 
 
-        revealElements.forEach(
-            element => {
+        revealElements.forEach(element => {
 
-                revealObserver.observe(element);
+            revealObserver.observe(element);
 
-            }
-        );
+        });
 
 
 
-        /* =================================================
+        /* =========================
            PARALLAX GLOW
-        ================================================== */
+        ========================== */
 
         document.addEventListener(
             "mousemove",
