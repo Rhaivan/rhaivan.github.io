@@ -3174,6 +3174,26 @@ nav {
     background: linear-gradient(135deg, var(--ink), #8da7a0) !important;
 }
 
+.skill-icon-box.javascript {
+    background: linear-gradient(135deg, #f7df1e, #e4bd16) !important;
+}
+
+.skill-icon-box.express {
+    background: linear-gradient(135deg, #343536, #111212) !important;
+}
+
+.skill-icon-box.node {
+    background: linear-gradient(135deg, #6aaa64, #39834b) !important;
+}
+
+.skill-icon-box.mysql {
+    background: linear-gradient(135deg, #5ca9d6, #287aa9) !important;
+}
+
+.skill-icon-box.mongodb {
+    background: linear-gradient(135deg, #74bf72, #3f9751) !important;
+}
+
 .skill-icon-box img,
 .ti img,
 .contact-icon svg {
@@ -3191,6 +3211,31 @@ nav {
     color: #8c5f4c;
 }
 
+.skill-badge.frontend {
+    background: #fff3bd;
+    border-color: #e5c94d;
+    color: #756000;
+}
+
+.skill-badge.backend {
+    background: #e8e8e8;
+    border-color: #999999;
+    color: #3f403f;
+}
+
+.skill-badge.runtime {
+    background: #dcefdc;
+    border-color: #8fbe8d;
+    color: #3e7042;
+}
+
+.skill-badge.database,
+.skill-badge.database-alt {
+    background: #dcecf4;
+    border-color: #8bb8cc;
+    color: #32677d;
+}
+
 .contact-icon {
     background: linear-gradient(135deg, var(--coral), #e2ae8e) !important;
 }
@@ -3202,4 +3247,28 @@ footer {
 
 footer .footer-name {
     color: #fffdf8;
+}
+
+.contact-icon {
+    box-shadow: none;
+}
+
+.email-icon {
+    background: #ea4335 !important;
+    border-color: #c93429;
+}
+
+.github-icon {
+    background: #24292f !important;
+    border-color: #15181b;
+}
+
+.linkedin-icon {
+    background: #0a66c2 !important;
+    border-color: #07549f;
+}
+
+.contact-icon svg {
+    color: #ffffff;
+    fill: currentColor;
 }
