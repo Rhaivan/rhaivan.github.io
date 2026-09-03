@@ -16,7 +16,7 @@
 
     <meta
         name="theme-color"
-        content="#04051a"
+        content="#f5f1e9"
     >
 
     <title>Derien - Portfolio</title>
@@ -38,10 +38,46 @@
 <body>
 
     <!-- =========================
-         BACKGROUND
+         SCROLL BUDDY (jalan saat scroll, duduk saat diam)
     ========================== -->
 
-    <canvas id="stars-canvas"></canvas>
+    <div class="scroll-buddy" id="scroll-buddy" aria-hidden="true">
+
+        <svg class="pose pose-sit" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="8" r="2" />
+            <path d="M50,10 L47,54" />
+            <path d="M14,34 A36,26 0 0 1 86,34" />
+            <path d="M16,33 Q24.5,40 33,33 Q41.5,40 50,33 Q58.5,40 67,33 Q75.5,40 84,33" />
+            <path d="M44,60 Q40,56 47,52" />
+            <path d="M60,60 Q68,68 65,78" />
+            <path d="M50,32 C38,32 30,42 30,56 C30,68 36,78 44,82 L56,82 C64,78 70,68 70,56 C70,42 62,32 50,32 Z" />
+            <path d="M44,81 Q32,88 28,97" />
+            <ellipse cx="20" cy="99" rx="10" ry="4.5" transform="rotate(20 20 99)" />
+            <path d="M56,81 Q68,88 72,97" />
+            <ellipse cx="80" cy="99" rx="10" ry="4.5" transform="rotate(-20 80 99)" />
+        </svg>
+
+        <svg class="pose pose-walk" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="8" r="2" />
+            <path d="M50,10 L46,52" />
+            <path d="M14,34 A36,26 0 0 1 86,34" />
+            <path d="M16,33 Q24.5,40 33,33 Q41.5,40 50,33 Q58.5,40 67,33 Q75.5,40 84,33" />
+            <path d="M44,44 Q37,40 46,52" />
+            <path d="M58,46 Q66,54 63,72" />
+            <g class="body-group">
+                <path d="M50,32 C38,32 30,42 30,56 C30,68 36,78 44,82 L56,82 C64,78 70,68 70,56 C70,42 62,32 50,32 Z" />
+                <g class="leg-front" style="transform-origin:45px 81px">
+                    <path d="M45,81 Q54,95 58,105" />
+                    <ellipse cx="63" cy="108" rx="11" ry="4.5" transform="rotate(-8 63 108)" />
+                </g>
+                <g class="leg-back" style="transform-origin:55px 81px">
+                    <path d="M55,81 Q48,93 40,101" />
+                    <ellipse cx="31" cy="104" rx="10" ry="4.5" transform="rotate(18 31 104)" />
+                </g>
+            </g>
+        </svg>
+
+    </div>
 
 
     <!-- =========================
@@ -121,9 +157,6 @@
             id="about"
         >
 
-            <div class="hero-glow"></div>
-
-
             <div class="hero-left">
 
                 <div class="hero-badge">
@@ -170,9 +203,9 @@
             </div>
 
 
-            <!-- =========================
-                 FOTO + ORBIT
-            ========================== -->
+              <!-- =========================
+                  FOTO + TEKNOLOGI
+              ========================== -->
 
             <div class="hero-right">
 
@@ -182,32 +215,6 @@
                         alt="Foto profil Derien"
                     >
                 </div>
-
-
-                <!-- Orbit Lines -->
-
-                <div class="orbit-line orbit-45"></div>
-                <div class="orbit-line orbit-135"></div>
-                <div class="orbit-line orbit-225"></div>
-                <div class="orbit-line orbit-315"></div>
-
-
-                <!-- Orbit Rings -->
-
-                <div
-                    class="orbit-ring-anim or1"
-                    aria-hidden="true"
-                ></div>
-
-                <div
-                    class="orbit-ring-anim or2"
-                    aria-hidden="true"
-                ></div>
-
-                <div
-                    class="orbit-ring-anim or3"
-                    aria-hidden="true"
-                ></div>
 
 
                 <!-- JavaScript -->
@@ -853,125 +860,36 @@
     <script>
 
         /* =========================
-           STAR BACKGROUND
+           SCROLL BUDDY
         ========================== */
 
-        const canvas =
-            document.getElementById("stars-canvas");
+        const scrollBuddy =
+            document.getElementById("scroll-buddy");
 
-        const ctx =
-            canvas.getContext("2d");
-
-        let width;
-        let height;
-        let stars = [];
-
-
-        function resizeCanvas() {
-
-            width =
-                canvas.width =
-                window.innerWidth;
-
-            height =
-                canvas.height =
-                document.body.scrollHeight;
-
-        }
-
-
-        function createStars() {
-
-            stars = [];
-
-            for (let i = 0; i < 250; i++) {
-
-                stars.push({
-
-                    x: Math.random() * width,
-
-                    y: Math.random() * height,
-
-                    radius:
-                        Math.random() * 1.6 + 0.2,
-
-                    phase:
-                        Math.random() *
-                        Math.PI *
-                        2,
-
-                    speed:
-                        Math.random() *
-                        0.01 +
-                        0.005
-
-                });
-
-            }
-
-        }
-
-
-        function drawStars() {
-
-            ctx.clearRect(
-                0,
-                0,
-                width,
-                height
-            );
-
-
-            stars.forEach(star => {
-
-                star.phase += star.speed;
-
-
-                const opacity =
-                    0.3 +
-                    Math.sin(star.phase) *
-                    0.45;
-
-
-                ctx.beginPath();
-
-
-                ctx.arc(
-                    star.x,
-                    star.y,
-                    star.radius,
-                    0,
-                    Math.PI * 2
-                );
-
-
-                ctx.fillStyle =
-                    `rgba(255,255,255,${opacity})`;
-
-
-                ctx.fill();
-
-            });
-
-
-            requestAnimationFrame(drawStars);
-
-        }
-
-
-        resizeCanvas();
-        createStars();
-        drawStars();
-
+        let scrollBuddyTimer = null;
 
         window.addEventListener(
-            "resize",
+            "scroll",
             () => {
 
-                resizeCanvas();
-                createStars();
+                if (!scrollBuddy) {
+                    return;
+                }
 
-            }
+                scrollBuddy.classList.add("is-walking");
+
+                clearTimeout(scrollBuddyTimer);
+
+                scrollBuddyTimer = setTimeout(() => {
+
+                    scrollBuddy.classList.remove(
+                        "is-walking"
+                    );
+
+                }, 180);
+
+            },
+            { passive: true }
         );
 
 
@@ -1014,50 +932,6 @@
         });
 
 
-
-        /* =========================
-           PARALLAX GLOW
-        ========================== */
-
-        document.addEventListener(
-            "mousemove",
-            event => {
-
-                const glow =
-                    document.querySelector(
-                        ".hero-glow"
-                    );
-
-
-                if (!glow) {
-                    return;
-                }
-
-
-                const x =
-                    (
-                        event.clientX /
-                        window.innerWidth -
-                        0.5
-                    ) * 30;
-
-
-                const y =
-                    (
-                        event.clientY /
-                        window.innerHeight -
-                        0.5
-                    ) * 20;
-
-
-                glow.style.transform =
-                    `translateX(
-                        calc(-50% + ${x}px)
-                    )
-                    translateY(${y}px)`;
-
-            }
-        );
 
     </script>
 
